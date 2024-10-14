@@ -1,0 +1,114 @@
+body {
+    font-family: "Varela Round", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button#addButton {
+    width: 100%;  
+    padding: 10px;
+    background: #ca98eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#addButton:hover {
+    background: #b75fd9; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
+li button {
+    width: auto; 
+    background: #ca98eb;
+    border: none;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+li button:hover {
+    background: #9b48d2;
+}
+
+@keyframes growIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes shrinkOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+}
+
+/*Botão de adicionar*/
+button#addButton:active {
+    transform: scale(0.98);
+    transition: transform 0.2s;
+}
+
+/*Botão de excluir */
+li button:active {
+    transform: scale(0.98);
+    transition: transform 0.2s;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+
